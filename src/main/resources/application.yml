@@ -1,0 +1,13 @@
+spring:
+  cloud:
+    stream:
+      bindings:
+        input-in-0:
+          destination: input-data
+  data:
+    mongodb:
+      database: admin
+      host: localhost
+      port: 27017
+      username: root
+      password: root
