@@ -10,8 +10,8 @@ import java.util.function.Consumer;
 
 import static java.util.Objects.nonNull;
 
-@Component("input")
-public class InputConsumer implements Consumer<PersonDocument> {
+@Component("person")
+public class PersonConsumer implements Consumer<PersonDocument> {
 
     @Autowired
     private Logger logger;

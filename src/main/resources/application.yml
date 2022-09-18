@@ -2,7 +2,7 @@ spring:
   cloud:
     stream:
       bindings:
-        input-in-0:
+        person-in-0:
           destination: input-data
   data:
     mongodb:
@@ -10,4 +10,4 @@ spring:
       host: localhost
       port: 27017
       username: root
-      password: root
+      password: ${MONGO_INITDB_ROOT_PASSWORD:root}
